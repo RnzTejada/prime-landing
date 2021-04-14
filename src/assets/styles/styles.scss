@@ -1,0 +1,43 @@
+@import './variables';
+@font-face {
+  font-family: Inconsolata;
+  src: url('../fonts/inconsolata.ttf');
+}
+body {
+  overflow-x: hidden;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: #2d2d2d;
+}
+
+.navbar-area {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.nav-item {
+  font-family: Inconsolata;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #555555 !important;
+  &hover {
+    color: black;
+    transition: 1s;
+  }
+}
