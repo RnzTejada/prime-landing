@@ -125,6 +125,9 @@ body {
     letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-weight: 800;
+    &.paradigm {
+      color: #333333;
+    }
   }
   span {
     text-transform: uppercase;
@@ -133,4 +136,15 @@ body {
     color: #8e8e8e;
     transform: rotate(-90deg);
   }
+}
+
+.section-paradigm {
+  background-color: white;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: $textColor;
 }
