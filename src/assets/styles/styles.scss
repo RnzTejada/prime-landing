@@ -3,7 +3,13 @@
   font-family: Inconsolata;
   src: url('../fonts/inconsolata.ttf');
 }
+@font-face {
+  font-family: SourcePro;
+  src: url('../fonts/SourceSansPro.ttf');
+}
+
 body {
+  font-family: Inconsolata;
   overflow-x: hidden;
 }
 
@@ -12,12 +18,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: #2d2d2d;
 }
 
 .navbar-area {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -35,9 +43,94 @@ body {
   font-size: 0.9rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
-  color: #555555 !important;
+  color: $textColor !important;
   &hover {
     color: black;
     transition: 1s;
+  }
+}
+
+//Header
+.title {
+  font-family: Inconsolata;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.btn-main {
+  color: whitesmoke;
+  width: 40%;
+  background-color: $bgBtn;
+  border-radius: $borderRadius !important;
+  border-color: $bgBtn;
+  &:hover {
+    background-color: $textColor;
+    color: whitesmoke !important;
+    border-color: $textColor;
+  }
+}
+
+.timeline-area {
+  width: 360px;
+  border-right: 1px solid #2d2d2d;
+  padding: 0 5px 0 0;
+  .item {
+    color: $textColor;
+    padding: 3.5rem 0;
+    span {
+      font-family: SourcePro;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1rem;
+    }
+    h4:after {
+      content: '-';
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+  }
+}
+
+.section-broken {
+  background-color: $bgSection;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+  h3 {
+    color: $textBroken;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  p {
+    color: $textBroken;
+    font-family: SourcePro;
+    font-size: 1rem;
+  }
+}
+.section-title {
+  display: flex;
+  top: 0;
+  left: 0;
+  margin: 90px 0;
+  width: 100%;
+  h2 {
+    color: #fff;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+  span {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    color: #8e8e8e;
+    transform: rotate(-90deg);
   }
 }
