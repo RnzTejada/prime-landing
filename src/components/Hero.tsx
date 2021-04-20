@@ -14,6 +14,24 @@ const Hero = () => (
           <button type="button" className="btn btn-main">
             Start Now
           </button>
+          <Row className="timeline-mobile">
+            <Col className="item" sm={6} md={6}>
+              <h4>10+ millon</h4>
+              <span>Stolen accounts</span>
+            </Col>
+            <Col className="item" sm={6} md={6}>
+              <h4>570+ millon</h4>
+              <span>Stolen passwords</span>
+            </Col>
+            <Col className="item" sm={6} md={6}>
+              <h4>$200 billon</h4>
+              <span>In revenue by reselling identity data each year</span>
+            </Col>
+            <Col className="item" sm={6} md={6}>
+              <h4>1</h4>
+              <span>Only one for you</span>
+            </Col>
+          </Row>
         </div>
       </Col>
       <Col className="timeline-area" lg={6} sm={12}>
