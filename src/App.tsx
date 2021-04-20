@@ -9,7 +9,7 @@ import OpenMarket from './components/OpenMarket';
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <BrokenSection />
       <ParadigmSection />
       <OpenMarket />
