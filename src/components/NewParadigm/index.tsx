@@ -6,8 +6,8 @@ const ParadigmSection = () => (
   <section className="section-paradigm">
     <Container className="content">
       <Row>
-        <Col xs={12}>
-          <div className="section-title justify-content-end py-4">
+        <Col sm={12}>
+          <div className="section-title float-lg-right  py-4">
             <h2 className="paradigm">A NEW PARADIGM</h2>
             <span>solution</span>
           </div>

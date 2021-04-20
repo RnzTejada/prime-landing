@@ -7,10 +7,10 @@ const Footer = () => (
     <footer className="footer">
       <Container>
         <Row>
-          <Col className="border-r logo text-center" lg={4} xs={12}>
+          <Col className="border-r logo text-center mt-5 pb-5" lg={4} sm={12}>
             <img src={Logo} alt="" />
           </Col>
-          <Col className="border-r" lg={4} xs={12}>
+          <Col className="border-r my-3" lg={4} sm={12}>
             <ul>
               <li>home</li>
               <li>broken system</li>
@@ -19,12 +19,12 @@ const Footer = () => (
               <li>start now</li>
             </ul>
           </Col>
-          <Col className="questions" lg={4} xs={12}>
+          <Col className="questions my-5" lg={4} sm={12}>
             <Row>
-              <Col xs={12}>
+              <Col sm={12}>
                 <h5>Any questions?</h5>
               </Col>
-              <Col xs={12}>
+              <Col sm={12}>
                 <button className="btn btn-main" type="button">
                   Contact Us
                 </button>

@@ -5,11 +5,11 @@ const LitleSection = () => (
   <div className="litle-section">
     <Container>
       <Row>
-        <Col xs={12}>
+        <Col sm={12}>
           <div className="title">Ready to regain the control of your data?</div>
         </Col>
-        <Col className="text-center py-4" xs={12}>
-          <button type="button" className="btn size-sm btn-main">
+        <Col className="text-center py-4" sm={12}>
+          <button type="button" className="btn btn-main">
             Start Now
           </button>
         </Col>

@@ -5,7 +5,7 @@ const OpenMarket = () => (
   <section className="section-marketplace">
     <Container>
       <Row>
-        <Col xs={12}>
+        <Col sm={12}>
           <div className="section-title py-4">
             <span>earnings</span>
             <h2 className="text-white">AN OPEN MARKETPLACE</h2>

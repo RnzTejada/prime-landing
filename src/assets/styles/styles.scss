@@ -158,13 +158,12 @@ body {
     font-size: 1rem;
   }
 }
+
 .section-title {
   display: flex;
-  top: 0;
-  left: 0;
   margin: 90px 0;
-  width: 100%;
   h2 {
+    width: 100%;
     color: #fff;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
@@ -179,6 +178,10 @@ body {
     font-size: 1rem;
     color: #8e8e8e;
     transform: rotate(-90deg);
+  }
+  @media screen and (max-width: 991px) {
+    margin: 30px 0 !important;
+    display: block !important;
   }
 }
 
@@ -272,6 +275,10 @@ body {
   }
   & .border-r {
     border-right: 1px solid rgba($color: #fff, $alpha: 0.2) !important;
+    @media screen and (max-width: 991px) {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.2) !important;
+      border-right: none !important;
+    }
   }
 
   .questions {
