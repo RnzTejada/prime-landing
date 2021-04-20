@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Logo from '../assets/img/logo-3.svg';
-import Border from '../assets/img/border-section.svg';
 import Line1 from '../assets/img/line-1.svg';
 import Line2 from '../assets/img/line-2.svg';
 
