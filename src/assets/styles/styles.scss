@@ -36,6 +36,12 @@ body {
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
+
+    .custom-collapse {
+      @media screen and (max-width: 991px) {
+        background-color: $bgBtn;
+      }
+    }
   }
 
   .nav-item {
@@ -48,6 +54,9 @@ body {
     &hover {
       color: black;
       transition: 1s;
+    }
+    @media screen and (max-width: 991px) {
+      color: white !important;
     }
   }
 
