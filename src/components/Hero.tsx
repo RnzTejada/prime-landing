@@ -1,6 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Logo from '../assets/img/logo-3.svg';
+import Border from '../assets/img/border-section.svg';
+import Line1 from '../assets/img/line-1.svg';
+import Line2 from '../assets/img/line-2.svg';
 
 const Hero = () => (
   <div>
@@ -37,6 +40,18 @@ const Hero = () => (
         </div>
       </Col>
     </Row>
+    <div className="item-1">
+      <img src={Line1} alt="" />
+    </div>
+    <div className="item-2">
+      <img src={Line2} alt="" />
+    </div>
+    <div className="item-3">
+      <img src={Line2} alt="" />
+    </div>
+    <div className="item-4">
+      <img src={Line2} alt="" />
+    </div>
   </div>
 );
 

@@ -1,19 +1,20 @@
 import React from 'react';
 import BrokenSection from './components/BrokenSystem';
-import Hero from './components/Hero';
-// eslint-disable-next-line import/no-named-as-default
-import NavBar from './components/Navbar';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import LitleSection from './components/LitleSection';
 import ParadigmSection from './components/NewParadigm';
+import OpenMarket from './components/OpenMarket';
 
 function App() {
   return (
     <>
-      <header className="App-header">
-        <NavBar />
-        <Hero />
-      </header>
+      <Header />
       <BrokenSection />
       <ParadigmSection />
+      <OpenMarket />
+      <LitleSection />
+      <Footer />
     </>
   );
 }

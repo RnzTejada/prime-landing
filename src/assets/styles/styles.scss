@@ -10,18 +10,57 @@
 
 body {
   font-family: Inconsolata;
-  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
 }
 
-.App-header {
-  background-color: white;
-  min-height: 100vh;
+::-webkit-scrollbar {
+  display: none;
+}
+
+.app-header {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: #2d2d2d;
+  background: white url('../img/border-section.svg') no-repeat bottom left;
+  margin-bottom: -0.3rem !important;
+  .item-1 {
+    position: absolute;
+    left: 30%;
+    bottom: 5px;
+  }
+
+  .item-2 {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+  }
+  .item-3 {
+    position: absolute;
+    right: 60px;
+    top: 70%;
+    transform: rotate(-90deg);
+  }
+  .item-4 {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: rotate(180deg);
+  }
+  @media screen and (max-width: 992px) {
+    .item-4,
+    .item-3,
+    .item-2,
+    .item-1 {
+      display: none;
+    }
+    .svg {
+      position: relative;
+    }
+  }
 }
 
 .navbar-area {
@@ -60,6 +99,7 @@ body {
 .btn-main {
   color: whitesmoke;
   width: 40%;
+  font-weight: 800;
   background-color: $bgBtn;
   border-radius: $borderRadius !important;
   border-color: $bgBtn;
@@ -67,6 +107,9 @@ body {
     background-color: $textColor;
     color: whitesmoke !important;
     border-color: $textColor;
+  }
+  &.size-sm {
+    width: 20%;
   }
 }
 
@@ -101,6 +144,7 @@ body {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: whitesmoke;
+
   h3 {
     color: $textBroken;
     font-size: 24px;
@@ -139,12 +183,115 @@ body {
 }
 
 .section-paradigm {
-  background-color: white;
+  background: white url('../img/border-rotate.svg') no-repeat top right;
+  min-height: 80vh;
+  margin-bottom: -0.5rem !important;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: $textColor;
+
+  .item {
+    .image {
+      display: flex;
+      justify-content: center;
+    }
+    .title {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+    p {
+      display: block;
+      font-size: 1rem;
+      font-family: SourcePro;
+      text-align: left;
+    }
+  }
+}
+
+.section-marketplace {
+  background-color: $bgSection;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-size: calc(10px + 2vmin);
   color: $textColor;
+  .item {
+    color: $textMarketPlace;
+    .title {
+      font-family: SourcePro !important;
+      font-weight: 900;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+    }
+    p {
+      font-family: SourcePro !important;
+      font-size: 1rem;
+      line-height: 30px;
+    }
+  }
+}
+
+.litle-section {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .title {
+    display: block;
+    font-family: SourcePro;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 40px;
+  }
+  background: white url('../img/border-section.svg') no-repeat bottom left;
+}
+
+.footer {
+  background: $bgSection;
+  color: whitesmoke;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    padding: 1rem 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 0.9rem;
+    font-weight: 500;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  & .border-r {
+    border-right: 1px solid rgba($color: #fff, $alpha: 0.2) !important;
+  }
+
+  .questions {
+    text-align: center !important;
+    display: flex;
+    font-family: SourcePro;
+    justify-content: center;
+    align-items: center;
+    button.btn-main.btn {
+      background-color: $bgBtn;
+      box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.13);
+    }
+  }
+}
+.copy {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: rgba($color: #fff, $alpha: 0.2);
+  background-color: $bgCopy;
+  text-align: center;
+  height: 2rem;
 }
