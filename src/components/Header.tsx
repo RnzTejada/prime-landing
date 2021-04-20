@@ -3,10 +3,14 @@ import Hero from './Hero';
 // eslint-disable-next-line import/no-named-as-default
 import NavBar from './Navbar';
 
+const Fade = require('react-reveal/Fade');
+
 const Header = () => (
   <div className="app-header">
-    <NavBar />
-    <Hero />
+    <Fade top>
+      <NavBar />
+      <Hero />
+    </Fade>
   </div>
 );
 
