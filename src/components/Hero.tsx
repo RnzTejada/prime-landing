@@ -3,8 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Logo from '../assets/img/logo-3.svg';
 
 const Hero = () => (
-  <Container className="hero">
-    <Row>
+  <Container fluid className="hero">
+    <Row className="w-100">
       <Col className="text" sm={12} lg={6}>
         <div>
           <img src={Logo} alt="logo" />

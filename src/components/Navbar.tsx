@@ -1,28 +1,24 @@
 import React from 'react';
 import { Nav, Navbar, Container, Row, Col } from 'react-bootstrap';
 
-const Fade = require('react-reveal/Fade');
-
 export const NavBar = () => (
   <div className="navbar-area">
-    <Fade left>
-      <Container fluid>
-        <Row>
-          <Col lg="12">
-            <Navbar className="pt-4" expand="lg">
-              <Navbar.Toggle aria-controls="nav" className="border-0 ml-auto" />
-              <Navbar.Collapse className="pl-lg-5 custom-collapse" id="nav">
-                <Nav.Link className="nav-item">WHITEPAPER</Nav.Link>
-                <Nav.Link className="nav-item">DOWNLOAND</Nav.Link>
-                <Nav.Link className="nav-item">TOKEN</Nav.Link>
-                <Nav.Link className="nav-item">MARKETPLACE</Nav.Link>
-                <Nav.Link className="nav-item">SIGN IN</Nav.Link>
-              </Navbar.Collapse>
-            </Navbar>
-          </Col>
-        </Row>
-      </Container>
-    </Fade>
+    <Container fluid>
+      <Row>
+        <Col lg="12">
+          <Navbar className="pt-4" expand="lg">
+            <Navbar.Toggle aria-controls="nav" className="border-0 ml-auto" />
+            <Navbar.Collapse className="pl-lg-5 custom-collapse" id="nav">
+              <Nav.Link className="nav-item">WHITEPAPER</Nav.Link>
+              <Nav.Link className="nav-item">DOWNLOAND</Nav.Link>
+              <Nav.Link className="nav-item">TOKEN</Nav.Link>
+              <Nav.Link className="nav-item">MARKETPLACE</Nav.Link>
+              <Nav.Link className="nav-item">SIGN IN</Nav.Link>
+            </Navbar.Collapse>
+          </Navbar>
+        </Col>
+      </Row>
+    </Container>
   </div>
 );
 
