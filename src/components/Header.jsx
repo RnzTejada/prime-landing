@@ -3,9 +3,13 @@ import Hero from './Hero';
 // eslint-disable-next-line import/no-named-as-default
 import NavBar from './Navbar';
 
+const Zoom = require('react-reveal/Zoom');
+
 const Header = () => (
   <header className="app-header">
-    <div className="items" />
+    <Zoom cascade>
+      <div className="items" />
+    </Zoom>
     <Hero />
     <NavBar />
   </header>
