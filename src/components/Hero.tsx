@@ -1,6 +1,7 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import Logo from '../assets/img/logo-3.svg';
+import Telegram from '../assets/img/telegram.svg';
 
 const Hero = () => (
   <Container fluid className="hero">
@@ -11,9 +12,9 @@ const Hero = () => (
           <h3 className="py-3 title">
             It's time for you to regain control of your data
           </h3>
-          <button type="button" className="btn btn-main">
-            Start Now
-          </button>
+          <Button variant="" size="lg" className="btn-main">
+            <img src={Telegram} alt="" /> Enter the community
+          </Button>
           <Row className="timeline-mobile">
             <Col className="item" sm={6} md={6}>
               <h4>10+ millon</h4>

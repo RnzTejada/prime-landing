@@ -22,21 +22,48 @@ body {
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: #2d2d2d;
-  background: white url('../img/border-section.svg') no-repeat bottom left;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.49650349650349646) 0%,
+    rgba(255, 255, 255, 0.8) 83%
+  );
+  background: url('../img/border-section.svg') no-repeat bottom left;
   margin-bottom: -0.3rem !important;
+  .items {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/bg-item-1.svg'), url('../img/bg-item-1.svg'),
+      url('../img/bg-item-2.svg'), url('../img/bg-item-2.svg'),
+      url('../img/bg-item-3.svg'), url('../img/bg-item-4.svg'),
+      url('../img/bg-item-4.svg'), url('../img/bg-item-2.svg'),
+      url('../img/bg-item-3.svg'), url('../img/bg-item-1.svg'),
+      url('../img/bg-item-2.svg'), url('../img/bg-item-4.svg'),
+      url('../img/bg-item-1.svg'), url('../img/bg-item-4.svg'),
+      url('../img/bg-item-2.svg'), url('../img/line-1.svg'),
+      url('../img/line-2.svg'), url('../img/line-1.svg');
+    background-position: 2% 75%, 80% 90%, 5% 90%, 40% 25%, 36% 19%, 0% 35%,
+      25% 90%, 75% 20%, 22% 45%, 85% 70%, 50% 50%, 60% 75%, 23% 50%, 10% 0%,
+      35% 1%, 40% 98%, 55% 98%, 80% 60%;
+    background-repeat: no-repeat;
+
+    @media screen and(max-width : 991px) {
+      display: none;
+    }
+  }
+
+  .item1 {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/line-1.svg') no-repeat 80% bottom;
+  }
+
   .navbar-area {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 10vh;
     z-index: 99;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-
     .custom-collapse {
       @media screen and (max-width: 991px) {
         background-color: $bgBtn;
@@ -63,14 +90,17 @@ body {
   .hero {
     height: 90vh;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     .text {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       @media screen and (max-width: 991px) {
         margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        text-align: center !important;
       }
     }
     .timeline-area {
@@ -81,6 +111,9 @@ body {
       .item {
         color: $textColor;
         padding: 3.5rem 0;
+        h4 {
+          font-weight: 700;
+        }
         span {
           font-family: SourcePro;
           font-size: 1rem;
@@ -134,8 +167,8 @@ body {
 
 .btn-main {
   color: whitesmoke;
-  width: 40%;
   font-weight: 800;
+  text-align: center;
   background-color: $bgBtn;
   border-radius: $borderRadius !important;
   border-color: $bgBtn;
@@ -143,6 +176,17 @@ body {
     background-color: $textColor;
     color: whitesmoke !important;
     border-color: $textColor;
+  }
+  &:active {
+    background-color: $textColor;
+    color: whitesmoke !important;
+    border-color: $textColor;
+  }
+  &:focus {
+    background-color: $textColor;
+    color: whitesmoke !important;
+    border-color: $textColor;
+    box-shadow: none;
   }
   &.size-sm {
     width: 20%;
