@@ -18,7 +18,7 @@ const ParadigmSection = () => (
         </Row>
         <Row>
           <Col lg={4}>
-            <div className="item">
+            <div className="item px-3">
               <div className="image">
                 <img src={Elipse} alt="" />
               </div>
@@ -26,14 +26,14 @@ const ParadigmSection = () => (
               <p>
                 At the core of Prime are three proofs: Proof of Network, Proof
                 of Humanity, and Proof of Intent. These proofs, and the
-                underlying systems that support them are designed, to :a)
-                Protect the integrity of you and your data and b) Secure payment
-                for the data you share.
+                underlying systems that support them are designed, to:
+                <br /> a) Protect the integrity of you and your data and <br />{' '}
+                b) Secure payment for the data you share.
               </p>
             </div>
           </Col>{' '}
           <Col lg={4}>
-            <div className="item">
+            <div className="item px-3">
               <div className="image">
                 <img src={Elipse} alt="" />
               </div>
@@ -48,7 +48,7 @@ const ParadigmSection = () => (
             </div>
           </Col>{' '}
           <Col lg={4}>
-            <div className="item">
+            <div className="item px-3">
               <div className="image">
                 <img src={Elipse} alt="" />
               </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import Logo from '../assets/img/logo-4.svg';
 
 const Zoom = require('react-reveal/Zoom');
@@ -32,9 +32,9 @@ const Footer = () => (
                   <h5>Any questions?</h5>
                 </Col>
                 <Col sm={12}>
-                  <button className="btn btn-main" type="button">
+                  <Button className="btn-main" variant="">
                     Contact Us
-                  </button>
+                  </Button>
                 </Col>
               </Row>
             </Zoom>

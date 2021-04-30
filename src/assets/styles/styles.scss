@@ -270,6 +270,9 @@ body {
       text-align: left;
     }
   }
+  @media screen and (max-width: 991px) {
+    background: white !important;
+  }
 }
 
 .section-marketplace {

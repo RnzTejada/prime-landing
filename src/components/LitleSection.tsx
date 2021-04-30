@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Discord from '../assets/img/discord.svg';
 
 const Flip = require('react-reveal/Flip');
@@ -15,9 +15,9 @@ const LitleSection = () => (
             </div>
           </Col>
           <Col className="text-center py-4" sm={12}>
-            <button type="button" className="btn btn-main">
+            <Button variant="" className="btn-main">
               <img src={Discord} alt="" /> Join us
-            </button>
+            </Button>
           </Col>
         </Row>
       </Container>
