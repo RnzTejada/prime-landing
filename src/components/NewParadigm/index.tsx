@@ -5,8 +5,8 @@ import Elipse from '../../assets/img/elipse.svg';
 const Fade = require('react-reveal/Fade');
 
 const ParadigmSection = () => (
-  <Fade top>
-    <section className="section-paradigm">
+  <section className="section-paradigm">
+    <Fade top>
       <Container className="content">
         <Row>
           <Col sm={12}>
@@ -64,8 +64,8 @@ const ParadigmSection = () => (
           </Col>
         </Row>
       </Container>
-    </section>
-  </Fade>
+    </Fade>
+  </section>
 );
 
 export default ParadigmSection;
