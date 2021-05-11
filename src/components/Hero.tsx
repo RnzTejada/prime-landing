@@ -12,7 +12,7 @@ const Hero = () => (
           <h3 className="py-3 title">
             It's time for you to regain control of your data
           </h3>
-          <Button variant="" size="lg" className="btn-main">
+          <Button variant="" size="sm" className="btn-main">
             <img src={Telegram} alt="" /> Enter the community
           </Button>
           <Row className="timeline-mobile">
