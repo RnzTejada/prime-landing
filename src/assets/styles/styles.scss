@@ -261,7 +261,17 @@ body {
   }
   @media screen and (max-width: 991px) {
     margin: 30px 0 !important;
-    display: block !important;
+    h2 {
+      font-size: 22px;
+      line-height: 23px;
+      letter-spacing: 0.24em;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.2em;
+    }
   }
 }
 

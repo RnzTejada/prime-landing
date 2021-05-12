@@ -6,7 +6,7 @@ export const NavBar = () => (
     <Container fluid>
       <Row>
         <Col lg="12">
-          <Navbar className="pt-4" expand="lg">
+          <Navbar className="pt-lg-4" expand="lg">
             <Navbar.Toggle aria-controls="nav" className="border-0 ml-auto" />
             <Navbar.Collapse className="pl-lg-5 custom-collapse" id="nav">
               <Nav.Link className="nav-item">WHITEPAPER</Nav.Link>
