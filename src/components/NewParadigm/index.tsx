@@ -1,13 +1,19 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
-import Elipse from '../../assets/img/elipse.svg';
+import Paradigm1 from '../../assets/img/paradigm-1.svg';
+import Paradigm2 from '../../assets/img/paradigm-2.svg';
+import Paradigm3 from '../../assets/img/paradigm-3.svg';
+import Line from '../../assets/img/line-2.svg';
 
 const Fade = require('react-reveal/Fade');
 
 const ParadigmSection = () => (
   <section className="section-paradigm">
+    <div className="bg-item">
+      <img src={Line} alt="" />
+    </div>
     <Fade top>
-      <Container className="content">
+      <Container>
         <Row>
           <Col sm={12}>
             <div className="section-title float-lg-right  py-4">
@@ -17,10 +23,10 @@ const ParadigmSection = () => (
           </Col>
         </Row>
         <Row>
-          <Col lg={4}>
+          <Col className="my-sm-5" lg={4}>
             <div className="item px-3">
               <div className="image">
-                <img src={Elipse} alt="" />
+                <img src={Paradigm3} alt="" />
               </div>
               <div className="title text-center py-3">A framework of trust</div>
               <p>
@@ -32,10 +38,10 @@ const ParadigmSection = () => (
               </p>
             </div>
           </Col>{' '}
-          <Col lg={4}>
+          <Col className="my-sm-5" lg={4}>
             <div className="item px-3">
               <div className="image">
-                <img src={Elipse} alt="" />
+                <img src={Paradigm1} alt="" />
               </div>
               <div className="title text-center py-3">The power to opt-in</div>
               <p>
@@ -47,10 +53,10 @@ const ParadigmSection = () => (
               </p>
             </div>
           </Col>{' '}
-          <Col lg={4}>
+          <Col className="my-sm-5" lg={4}>
             <div className="item px-3">
               <div className="image">
-                <img src={Elipse} alt="" />
+                <img src={Paradigm2} alt="" />
               </div>
               <div className="title text-center py-3">You’re in control</div>
               <p>

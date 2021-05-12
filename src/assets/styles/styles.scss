@@ -208,7 +208,7 @@ body {
 
   h3 {
     color: $textBroken;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.5rem;
     letter-spacing: 0.1rem;
@@ -216,7 +216,26 @@ body {
   p {
     color: $textBroken;
     font-family: SourcePro;
-    font-size: 1rem;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 991px) {
+    .reverse {
+      flex-direction: row-reverse !important;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    h3 p {
+      text-align: center !important;
+    }
   }
 }
 
@@ -255,10 +274,20 @@ body {
   font-size: calc(10px + 2vmin);
   color: $textColor;
 
+  .bg-item {
+    position: absolute;
+    transform: rotate(90deg);
+    left: 4%;
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
   .item {
     .image {
       display: flex;
       justify-content: center;
+      height: 80px;
     }
     .title {
       display: block;
@@ -266,6 +295,7 @@ body {
       font-weight: 900;
     }
     p {
+      color: #555555;
       display: block;
       font-size: 1rem;
       font-family: SourcePro;
