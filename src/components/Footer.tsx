@@ -17,11 +17,9 @@ const Footer = () => (
           <Col className="border-r my-3" lg={4} sm={12}>
             <Zoom bottom>
               <ul>
-                <li>home</li>
-                <li>broken system</li>
-                <li>new paradigm</li>
-                <li>open marketplace</li>
-                <li>start now</li>
+                <li>back to top</li>
+                <li>LIGHTPAPER</li>
+                <li>TOKEN</li>
               </ul>
             </Zoom>
           </Col>

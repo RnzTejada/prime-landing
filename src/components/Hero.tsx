@@ -10,7 +10,7 @@ const Hero = () => (
         <div>
           <img src={Logo} alt="logo" />
           <h3 className="py-3 title">
-            It's time for you to regain control of your data
+            It's time to regain control of your data
           </h3>
           <Button variant="" size="sm" className="btn-main">
             <img src={Telegram} alt="" /> Enter the community

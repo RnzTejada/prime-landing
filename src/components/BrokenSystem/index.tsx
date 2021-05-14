@@ -23,16 +23,25 @@ const BrokenSection = () => (
         <Col className="py-4 my-lg-5 center" sm={12} lg={6}>
           <Slide right>
             <div className="text-left">
-              <h3>A Broke System</h3>
+              <h3> Leaky Data</h3>
               <p>
-                It’s estimated that over $200 billion is spent on the
-                acquisition and resale of personal identifiable information
-                (PII) in the United States each year. This is data used to
-                identify real-world people so that brands, agencies, and
-                technology companies can sell, market, or target a specific
-                demographic, interest group, or characteristic of that person.
-                For context, that is roughly equivalent to the gross domestic
-                product (GDP) of New Zealand.
+                The sad truth is that your data is likely freely available on
+                the internet. The story goes like this: You signed up for
+                Facebook but but didnʼt rotate your password frequently. In
+                April 2021,{' '}
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://haveibeenpwned.com/PwnedWebsites"
+                >
+                  Facebook was hacked and 500 million accounts were leaked
+                </a>
+                . The hackers repackaged your data and sold it to a data broker.
+                The data broker sold it to an advertising analytics company
+                (C)mbridge Analytica?a. The advertising analytics company uses
+                Googleʼs AdWords to target ads to you and people like you. Total
+                cost of the transaction? On average, around $5-10 million USD.
+                Benefit to you? $0.
               </p>
             </div>
           </Slide>
@@ -47,13 +56,16 @@ const BrokenSection = () => (
         <Col className="py-4 my-lg-5 center" sm={12} lg={6}>
           <Slide left>
             <div className="text-lg-right text-left">
-              <h3>No Control Over the Flow of Data</h3>
+              <h3>A System Designed to Exclude You</h3>
               <p>
-                Where is this data coming from and how is it used? Why are you,
-                the individual, not in control of how, why, and where your data
-                is used? Why are you not compensated for when your data is used?
-                These are the exact problems that we at Prime are setting out to
-                solve.{' '}
+                Data powers the internet. It controls the ads you see, the
+                content you read, the technology you utilize. But how do
+                companies acquire your data? Technology companies build products
+                to track the webpages you visit, the links you click on, the
+                people you talk to. Non-technology brands buy access to your
+                data for advertising and content curation. But whatʼs missing?
+                You. Prime puts you back in control of how and when your data is
+                used.
               </p>
             </div>
           </Slide>
