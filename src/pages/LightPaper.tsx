@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Paper from '../components/Paper';
 
 export default function Lightpaper() {
@@ -11,9 +11,15 @@ export default function Lightpaper() {
             <Paper className="text" />
           </Col>
           <Col className="center d-flex justify-content-center" xs={12}>
-            <Button variant="" className="btn-main">
+            <a
+              id="dbutton"
+              // eslint-disable-next-line global-require
+              href={`${process.env.PUBLIC_URL}/Lightpaper.pdf`}
+              download
+              className="btn btn-main"
+            >
               Download
-            </Button>
+            </a>
           </Col>
         </Row>
       </Container>
