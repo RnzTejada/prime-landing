@@ -17,7 +17,6 @@ const Footer = () => (
           <Col className="border-r my-3" lg={4} sm={12}>
             <Zoom bottom>
               <ul>
-                <li>back to top</li>
                 <li>LIGHTPAPER</li>
                 <li>TOKEN</li>
               </ul>

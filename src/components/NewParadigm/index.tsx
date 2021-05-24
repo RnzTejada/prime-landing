@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Paradigm1 from '../../assets/img/paradigm-1.svg';
 import Paradigm2 from '../../assets/img/paradigm-2.svg';
 import Paradigm3 from '../../assets/img/paradigm-3.svg';
@@ -38,7 +39,10 @@ const ParadigmSection = () => (
                 <br />
                 2) Proof of Humanity
                 <br />
-                3) Proof of Intent (link to Lightpaper anchor)
+                3){' '}
+                <Link className="text-black" to="/lightpaper">
+                  Proof of Intent
+                </Link>
                 <br />
                 These proofs are designed to protect the integrity of the Prime
                 platform by revealing details on the buyer and seller through

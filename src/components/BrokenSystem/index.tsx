@@ -16,12 +16,12 @@ const BrokenSection = () => (
       </Slide>
       <Row>
         <Col className="py-4 my-lg-5 center" sm={12} lg={6}>
-          <Slide right>
+          <Slide top>
             <img src={Game} alt="" height="250px" />
           </Slide>
         </Col>
         <Col className="py-4 my-lg-5 center" sm={12} lg={6}>
-          <Slide right>
+          <Slide top>
             <div className="text-left">
               <h3> Leaky Data</h3>
               <p>
