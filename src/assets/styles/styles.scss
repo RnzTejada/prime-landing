@@ -8,6 +8,11 @@
   src: url('../fonts/SourceSansPro.ttf');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Inconsolata;
   -ms-overflow-style: none; /* IE and Edge */
