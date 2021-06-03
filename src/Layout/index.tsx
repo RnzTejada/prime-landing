@@ -6,6 +6,7 @@ import {
   Switch,
 } from 'react-router-dom';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Loader from '../components/Loader';
 import TopNav from '../components/TopNav';
 import { routes } from '../utils/routes';
 
@@ -15,21 +16,23 @@ function App() {
       <ErrorBoundary>
         <Router>
           <TopNav />
-          <Switch>
-            {routes.map((route) => {
-              const Component = route.component;
-              const Key = route.key;
+          <React.Suspense fallback={<Loader />}>
+            <Switch>
+              {routes.map((route) => {
+                const Component = route.component;
+                const Key = route.key;
 
-              return (
-                <RouteProgress
-                  key={Key}
-                  path={route.path}
-                  exact={route.exact}
-                  render={(props) => <Component {...props} />}
-                />
-              );
-            })}
-          </Switch>
+                return (
+                  <RouteProgress
+                    key={Key}
+                    path={route.path}
+                    exact={route.exact}
+                    render={(props) => <Component {...props} />}
+                  />
+                );
+              })}
+            </Switch>
+          </React.Suspense>
         </Router>
       </ErrorBoundary>
     </>

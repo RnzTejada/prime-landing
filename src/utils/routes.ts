@@ -8,9 +8,9 @@ interface RouteType {
   render?: any;
 }
 
-import LandingPage from '../pages/LandingPage';
-import LightPaper from '../pages/LightPaper';
-import Token from '../pages/Token';
+const LandingPage = React.lazy(() => import('../pages/LandingPage'));
+const LightPaper = React.lazy(() => import('../pages/LightPaper'));
+const Token = React.lazy(() => import('../pages/Token'));
 
 export const routes: RouteType[] = [
   {
