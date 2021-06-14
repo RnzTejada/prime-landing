@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import Logo from '../assets/img/logo-3.svg';
 // import Telegram from '../assets/img/telegram.svg';1

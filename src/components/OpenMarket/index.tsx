@@ -1,7 +1,13 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+import { lazyload } from 'react-lazyload';
 
 const Slide = require('react-reveal/Slide');
+
+lazyload({
+  once: true,
+  offset: 100,
+});
 
 const OpenMarket = () => (
   <section className="section-marketplace">
