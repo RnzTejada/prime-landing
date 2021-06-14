@@ -14,7 +14,7 @@ const Footer = () => (
               <img src={Logo} alt="" />
             </Zoom>
           </Col>
-          <Col className="border-r my-3" lg={4} sm={12}>
+          <Col className="border-r logo text-center py-5" lg={4} sm={12}>
             <Zoom bottom>
               <ul>
                 <li>LIGHTPAPER</li>

@@ -8,7 +8,7 @@ const OpenMarket = () => (
     <Container>
       <Row>
         <Col sm={12}>
-          <Slide right>
+          <Slide>
             <div className="section-title py-4">
               <span>earnings</span>
               <h2 className="text-white">AN OPEN MARKETPLACE</h2>
